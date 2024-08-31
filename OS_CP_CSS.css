@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #4287f5;
+    background-color: #fff;
+}
+
+.main-container {
+    display: flex; /* Display in a row */
+    justify-content: center; /* Center align horizontally */
+    align-items: flex-start; /* Align to the top vertically */
+}
+
+.input-section, .process-info {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    flex: 1; /* Equal width for both input and process info */
+}
+
+#algorithm, #numProcesses {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#algorithm:hover, #numProcesses:hover {
+    border-color: #4287f5;
+}
+
+#submitBtn {
+    background-color: #4287f5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submitBtn:hover {
+    background-color: #3066c8;
+}
+
+.timeline {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+.event {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    color: #0a0808;
+    background-color: #4b99ce;
+}
+
+.idle {
+    background-color: #eb7878;
+    border: 1px solid #ddd;
+}
+
+.event.active {
+    background-color: #4b99ce;
+}
+
+.process-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.process-info h2 {
+    text-align: center;
+    color: #4287f5;
+}
+
+.process-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.process-info th, .process-info td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.process-info th {
+    background-color: #4287f5;
+    color: #fff;
+}
